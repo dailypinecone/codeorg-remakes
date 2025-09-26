@@ -1,0 +1,9 @@
+/* Style for Badminton Lineup Creator */
+
+.screen {
+    display: none; /* Hide all screens by default */
+}
+
+.screen.active {
+    display: block; /* Only show the active screen */
+}

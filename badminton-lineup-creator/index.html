@@ -3,14 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Badminton Lineup Creator</title>
+  <title>Badminton Lineup</title>
   <!-- Link CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Home Screen -->
+  <div id="home-screen" class="screen active">
+    <h1>Badminton Lineup Creator</h1>
+    <button onclick="showScreen('lineup-screen')">Create Lineup</button>
+    <button onclick="showScreen('info-screen')">App Info</button>"
+  </div>
 
-  <h1>Welcome to My App</h1>
-  <p>This is where your content goes.</p>
+  <!-- Lineup Screen -->
+  <div id="lineup-screen" class="screen">
+    <h2>Create Lineup</h2>
+    <label for="team-select">Select Team:</label>
+    <select id="team-select">
+      <option value="Varsity">Varsity</option>
+      <option value="JV">JV</option>
+      <option value="JV2">JV2</option>
+    </select>
+
+    <div id="player-inputs">
+
+    </div>
+
+    <button onclick="saveLineup()">Save Lineup</button>
+    <button onclick="showScreen('home-screen')">⬅️ Home</button>
+  </div>
+
+  <!-- Info Screen -->
+  <div id="info-screen" class="screen">
+    <h2>Lineup Creator App Info</h2>
+    <p>This app helps you create badminton lineups for different levels of teams.</p>
+    <button onclick="showScreen('home-screen')">⬅️ Home</button>
+  </div>
+
+  <!-- Varsity Lineup Screen -->
+  <div id="varsity-screen" class="screen">
+    <h2>Varsity Lineups</h2>
+    <div id="varsity-lineup">
+
+    </div>
+    <button onclick="showScreen('varsity-singles-screen')">View Singles</button>
+    <button onclick="showScreen('varsity-doubles-screen')">View Doubles</button>
+    <button onclick="showScreen('lineup-screen')">⬅️ Back</button>
+  </div>
+
+  <!-- Varsity Singles Screen -->
+  <div id="varsity-singles-screen" class="screen">
+    <h2>Varsity Singles Lineup</h2>
+    <div id="varsity-singles-lineup">
+
+    </div>
+    <button onclick="showScreen('varsity-screen')">⬅️ Back</button>
+  </div>
+
+  <!-- Varsity Doubles Screen -->
+  <div id="varsity-doubles-screen" class="screen">
+    <h2>Varsity Doubles Lineup</h2>
+    <div id="varsity-doubles-lineup">
+
+    </div>
+    <button onclick="showScreen('varsity-screen')">⬅️ Back</button>
+  </div>
+
+  <!-- JV Screen -->
+  <div id="jv-screen" class="screen">
+    <h2>JV Lineups</h2>
+    <div id="jv-lineup">
+
+    </div>
+    <button onclick="showScreen('jv-singles-screen')">View Singles</button>
+    <button onclick="showScreen('jv-double-screen')">View Doubles</button>
+    <button onclick="showScreen('lineup-screen')">⬅️ Back</button>
+  </div>
+
+  <!-- JV Singles Screen -->
+  <div id="jv-singles-screen" class="screen">
+    <h2>JV Singles Lineup</h2>
+    <div id="jv-singles-lineup">
+
+    </div>
+    <button onclick="showScreen('jv-screen')">⬅️ Back</button>
+  </div>
+
+  <!-- JV Doubles Screen -->
+   <div id="jv-doubles-screen" class="screen">
+    <h2>JV Doubles Lineup</h2>
+    <div id="jv-doubles-lineup">
+
+    </div>
+    <button onclick="showScreen('jv-screen')">⬅️ Back</button>
+  </div>
+
+  <!-- JV2 Screen -->
+  <div id="jv2-screen" class="screen">
+    <h2>JV2 Lineups</h2>
+    <div id="jv2-lineup">
+
+    </div>
+    <button onclick="showScreen('jv2-singles-screen')">View Singles</button>
+    <button onclick="showScreen('jv2-doubles-screen')">View Doubles</button>
+    <button onclick="showScreen('lineup-screen')">⬅️ Back</button>
+  </div>
 
   <!-- Link JS -->
   <script src="script.js"></script>
