@@ -29,10 +29,41 @@ button:hover {
     transform: scale(1.05);
 }
 
+label {
+    font-size: 20px;
+}
+
+select{
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 90px;
+    margin-block: 4px;
+    background-color: rgb(249, 252, 204) ;
+}
+
+input[type="text"] {
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
 .screen {
     display: none; /* Hide all screens by default */
 }
 
 .screen.active {
     display: block; /* Only show the active screen */
+}
+
+#app-info {
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    margin-block: 30px;
+    margin-inline: 360px;
 }
