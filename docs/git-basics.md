@@ -30,3 +30,12 @@
 - `git restore file.html` → undo changes to a file
 - `git reset HEAD file.html` → unstage a file
 - `git log --oneline --graph` → view history nicely
+
+## Common Commit Types
+- `feat:` → a new feature
+- `fix:` → a bug fix
+- `docs:` → documentation changes only
+- `style:` → formatting, whitespace, no code change
+- `refactor:` → code change that isn’t a feature or fix
+- `test:` → adding/changing tests
+- `chore:` → maintenance, tooling, configs, deps
