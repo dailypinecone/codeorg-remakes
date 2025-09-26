@@ -1,0 +1,10 @@
+# Ignore VS Code settings
+.vscode/
+
+# Ignore dependencies
+node_modules/
+
+# Ignore OS-specific junk files
+Thumbs.db
+desktop.ini
+.DS_Store
