@@ -10,3 +10,6 @@ Projects remade from Code.org into standalone JavaScript, HTML, and CSS applicat
 ## Tech
 - HTML, CSS, JavaScript
 - Git/GitHub
+
+## Documentation
+- [Git Cheat Sheet](docs/git-basics.md) - personal notes on Git workflow
