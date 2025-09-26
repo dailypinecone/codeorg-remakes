@@ -12,7 +12,7 @@
   <div id="home-screen" class="screen active">
     <h1>Badminton Lineup Creator</h1>
     <button onclick="showScreen('lineup-screen')">Create Lineup</button>
-    <button onclick="showScreen('info-screen')">App Info</button>"
+    <button onclick="showScreen('info-screen')">App Info</button>
   </div>
 
   <!-- Lineup Screen -->
@@ -20,9 +20,9 @@
     <h2>Create Lineup</h2>
     <label for="team-select">Select Team:</label>
     <select id="team-select">
-      <option value="Varsity">Varsity</option>
-      <option value="JV">JV</option>
-      <option value="JV2">JV2</option>
+      <option value="varsity">Varsity</option>
+      <option value="jv">JV</option>
+      <option value="jv2">JV2</option>
     </select>
 
     <div id="player-inputs">
@@ -30,6 +30,7 @@
     </div>
 
     <button onclick="saveLineup()">Save Lineup</button>
+    <button onclick="clearInputs()">Clear Lineup</button>
     <button onclick="showScreen('home-screen')">⬅️ Home</button>
   </div>
 
